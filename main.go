@@ -63,6 +63,9 @@ func realMain() int {
 
 	var err error
 
+	flag := "EDGEY{l1nu5_70rv4ld5_r3m3mb3r_y0ur_m1574k35}"
+	log.Printf("[INFO] flag is: %s", flag)
+
 	tmpLogPath := os.Getenv(envTmpLogPath)
 	if tmpLogPath != "" {
 		f, err := os.OpenFile(tmpLogPath, os.O_RDWR|os.O_APPEND, 0666)
